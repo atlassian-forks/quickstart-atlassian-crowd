@@ -1265,6 +1265,7 @@ Resources:
       LoadBalancerArn: !Ref LoadBalancer
       Port: 443
       Protocol: HTTPS
+      SslPolicy: "TLSv1.2"
   MainTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
